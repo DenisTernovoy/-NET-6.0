@@ -4,11 +4,11 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-string isSquare(int num1, int num2)
+bool isSquare(int num1, int num2)
 {
-    if (num1 * num1 == num2) return "Да";
-    else return "Нет";
+    return num1 * num1 == num2;
 }
 
-string result = isSquare(number1, number2);
-Console.WriteLine(result);
+bool result = isSquare(number1, number2);
+if (result) Console.WriteLine("Да");
+else Console.WriteLine("Нет");
