@@ -4,7 +4,12 @@
 // 78 -> 2
 // 89126 -> 5
 
-Console.WriteLine("Введите  число:");
-string number = Console.ReadLine();
-
-Console.WriteLine(number.Length);
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Введите  число:");
+        string number = Console.ReadLine();
+        Console.WriteLine(number.Length);
+    }
+}
