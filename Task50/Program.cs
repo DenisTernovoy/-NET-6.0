@@ -41,11 +41,15 @@ void PrintMatrix(int[,] matrix)
 
 void SearchElem(int[,] matrix, int row, int column)
 {
-    if (row < matrix.GetLength(0) && column < matrix.GetLength(1)) Console.WriteLine($"Элемент на позиции [{row}, {column}] -> {matrix[row, column]}");
-    else Console.WriteLine($"{row}, {column} -> такого элемента в массиве нет");
+    if (row < matrix.GetLength(0) && column < matrix.GetLength(1) && row >= 0 && column >= 0)
+    {
+        Console.WriteLine($"Элемент на позиции [{row}, {column}] -> {matrix[row, column]}");
+    } else {
+        Console.WriteLine($"{row}, {column} -> такого элемента в массиве нет");
+    }
 }
 
 int[,] array2D = CreateMatrixRndInt(3, 4, -100, 100);
 PrintMatrix(array2D);
 Console.WriteLine();
-SearchElem(array2D, 1, 2);
+SearchElem(array2D, 1, 3);
