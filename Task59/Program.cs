@@ -92,7 +92,7 @@ int[,] ChangeMatrix(int[,] matrix)
 }
 
 
-int[,] array2D = CreateMatrixRndInt(4, 4, 1, 10);
+int[,] array2D = CreateMatrixRndInt(6, 7, 1, 10);
 Console.WriteLine("Исходный массив:");
 PrintMatrix(array2D);
 int[,] newArray = ChangeMatrix(array2D);
